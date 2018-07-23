@@ -19,11 +19,11 @@ Route::get('/', function () {
 Route::get('/', 'PagesController@index');
 
 Route::get('/about', 'AboutController@about');
-
+/* 
 Route::get('/hello', function () {
     return 'Hello';
 });
-
+ */
 
 Route::get('/user/{id}/{name}', function ($id,$name) {
     return 'user is: ' . $id;
